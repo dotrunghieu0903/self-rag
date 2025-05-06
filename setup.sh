@@ -2,4 +2,5 @@
 
 pip install -r requirements.txt
 pip install flash-attn==2.3.6
-pip install faiss-gpu
+pip install faiss-gpu-cu12
+# pip install faiss-gpu
