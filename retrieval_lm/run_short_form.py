@@ -22,7 +22,7 @@ import sys
 import time
 from utils import PROMPT_DICT, TASK_INST, load_jsonlines, control_tokens, load_special_tokens
 from metrics import match, accuracy
-
+import multiprocessing as mp
 
 seed = 633
 
@@ -368,4 +368,5 @@ def main():
 
 
 if __name__ == "__main__":
+    mp.set_start_method("spawn", force=True)
     main()
