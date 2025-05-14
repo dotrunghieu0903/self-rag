@@ -368,6 +368,6 @@ def main():
 
 
 if __name__ == "__main__":
-    torch.multiprocessing.set_start_method("spawn", force=True)
+    torch.multiprocessing.set_start_method('forkserver')
     print(f"Multiprocessing start method: {torch.multiprocessing.get_start_method()}")
     main()
