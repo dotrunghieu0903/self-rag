@@ -368,7 +368,6 @@ def main():
 
 
 if __name__ == "__main__":
-    import multiprocessing as mp
-    mp.set_start_method('spawn')
+    torch.multiprocessing.set_start_method("spawn", force=True)
     print(f"Multiprocessing start method: {mp.get_start_method()}")
     main()
