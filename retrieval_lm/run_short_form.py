@@ -328,8 +328,8 @@ def main():
         _, evidences = process_data_evidences(row, top_n=args.ndocs)
         pred, results, do_retrieve = generate(
             prompt, evidences, max_new_tokens=args.max_new_tokens,)
-        if type(pred) is str and pred[0] == "#" or pred[0] == ":":
-            pred = pred[1:]
+        #if type(pred) is str and pred[0] == "#" or pred[0] == ":":
+            #pred = pred[1:]
         prompts.append(prompt)
         preds.append(pred)
         all_results.append(results)
