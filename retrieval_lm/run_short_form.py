@@ -369,5 +369,5 @@ def main():
 
 if __name__ == "__main__":
     torch.multiprocessing.set_start_method("spawn", force=True)
-    print(f"Multiprocessing start method: {mp.get_start_method()}")
+    print(f"Multiprocessing start method: {torch.multiprocessing.get_start_method()}")
     main()
