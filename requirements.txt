@@ -2,7 +2,7 @@
 # Please first check nvcc version and 
 # make sure it satisfies the vLLM's 
 # requirements.
-vllm
+vllm==0.2.6
 tqdm
 spacy
 scikit-learn
@@ -14,7 +14,7 @@ nltk
 dataclasses
 sacrebleu==2.4.0
 rouge_score==0.1.2
-flash-attn==2.7.3
+flash-attn==2.3.6
 einops==0.7.0
 sentencepiece
 deepspeed==0.12.6
